@@ -1,3 +1,21 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 72 19% 95%; /* #F3F4EF */
+    --foreground: 135 7% 11%; /* #191D1A */
+    --card: 0 0% 100%;
+    --card-foreground: 135 7% 11%;
+    --primary: 140 27% 33%; /* #3D6B4C */
+    --primary-foreground: 0 0% 100%;
+    --muted: 111 17% 92%; /* #E7EDE6 */
+    --muted-foreground: 92 6% 43%; /* #6E7568 */
+    --border: 80 11% 84%; /* #D7DAD1 */
+  }
+
+  * {
+    @apply border-border;
+  }
+}
